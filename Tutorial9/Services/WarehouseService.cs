@@ -6,12 +6,10 @@ namespace Tutorial9.Services;
 
 public class WarehouseService : IWarehouseService
 {
-    private readonly IDbService _dbService;
     private readonly IConfiguration _configuration;
 
-    public WarehouseService(IDbService dbService, IConfiguration configuration)
+    public WarehouseService(IConfiguration configuration)
     {
-        _dbService = dbService;
         _configuration = configuration;
     }
     
